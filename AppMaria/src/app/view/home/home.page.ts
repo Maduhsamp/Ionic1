@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { AlertController } from '@ionic/angular';
-import { Numeros } from 'src/app/model/entities/Numeros';
 
 
 @Component({
@@ -30,11 +29,11 @@ export class HomePage {
           this.presentAlert(this.resultado);
         
         }else if(this.operacao == 2) {
-          this.resultado = this.primeiroNumero*this.segundoNumero;
+          this.resultado = this.primeiroNumero * this.segundoNumero;
           this.presentAlert(this.resultado);
         
         }else if(this.operacao == 3) {
-          this.resultado = this.primeiroNumero/this.segundoNumero;
+          this.resultado = this.primeiroNumero / this.segundoNumero;
           this.presentAlert(this.resultado);
         }
       }else{

@@ -9,22 +9,22 @@
 <ion-content [fullscreen]="true">
   <ion-list>
     <ion-item>
-      <ion-input id="item" label="Primeiro Número"  type="number" placeholder="Insira um número" [(ngModel)]="primeiroNumero"></ion-input>
+      <ion-input label="Primeiro Número"  type="number" placeholder="Insira um número" [(ngModel)]="primeiroNumero"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-input id="item" label="Segundo Número" type="number" placeholder="Insira um número" [(ngModel)]="segundoNumero"></ion-input>
+      <ion-input label="Segundo Número" type="number" placeholder="Insira um número" [(ngModel)]="segundoNumero"></ion-input>
     </ion-item>
     
     <ion-item>
-      <ion-select id="item" label="Selecione a Operação" interface="popover" placeholder="selecione" [(ngModel)]="operacao">
+      <ion-select label="Operação" value="Adição" placeholder="Selecione a operação" [(ngModel)]="operacao">
         <ion-select-option value="0">Adição</ion-select-option>
         <ion-select-option value="1">Subtração</ion-select-option>
-        <ion-select-option value="3">Multiplicação</ion-select-option>
-        <ion-select-option value="4">Divisão</ion-select-option>
+        <ion-select-option value="2">Multiplicação</ion-select-option>
+        <ion-select-option value="3">Divisão</ion-select-option>
       </ion-select>
     </ion-item>
-    <ion-button  id="item" (click)="calcular()">Calcular</ion-button>
+    <ion-button (click)="calcular()">Calcular</ion-button>
   </ion-list>
 
 </ion-content>

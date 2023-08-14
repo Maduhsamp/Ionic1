@@ -4,9 +4,10 @@ export class Numeros {
     private _resultado: number;
     private _operacao!: number;
 
-    constructor (primeiroNumero : number, segundoNumero : number, resultado : number){
+    constructor (primeiroNumero : number, segundoNumero : number, operacao : number, resultado : number){
         this._primeiroNumero = primeiroNumero;
         this._segundoNumero = segundoNumero;
+        this._operacao = operacao;
         this._resultado = resultado;
     }
 
